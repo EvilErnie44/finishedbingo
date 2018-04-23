@@ -96,6 +96,7 @@ function randNumSort() {
 
 //function to check win condition
 function checkwinfunction(target) {
+    
 var winningOption = -1;
 var setSquares = 0;
 
@@ -117,7 +118,10 @@ if (colour == "red") {
   setSquares++;
   console.log(setSquares);
 }
-
+    if(setSquares===5){
+        alert("you're a winner harry"); 
+        location.reload(); 
+    }
 }
  /*
   var element = childCollection.item(target);
